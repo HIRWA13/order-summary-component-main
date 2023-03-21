@@ -1,0 +1,154 @@
+/*------Design
+--mob: 375
+--lscrn: 1440px
+---- */
+
+:root {
+  --clr-primary-pale-blu: hsl(225, 100%, 94%);
+  --clr-primary-bright-blu: hsl(245, 75%, 52%);
+
+  --clr-neu-vpale-blu: hsl(225, 100%, 98%);
+  --clr-neu-des-blu: hsl(224, 23%, 55%);
+  --clr-neu-dark-blu: hsl(223, 47%, 23%);
+  /* font weights*/
+  --fw-regular: 500;
+  --fw-bold: 700;
+  --fw-bolder: 900;
+
+  /* font family */
+  --ff-redhat: "Red Hat Display", sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+html,
+body {
+  height: 100%;
+}
+
+body {
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Removing Media defaults*/
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+/* Avoid text overflows */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+body {
+  font-family: var(--ff-redhat);
+  font-weight: var(--fw-regular);
+  font-size: 0.875rem;
+  background-color: var(--clr-neu-vpale-blu);
+  display: grid;
+  place-content: center;
+  margin: 1rem;
+  gap: 1rem;
+}
+article {
+  background-color: white;
+  border-radius: 1.5rem;
+  overflow: hidden;
+  display: grid;
+  max-width: 375px;
+  min-width: 375px;
+}
+.description {
+  padding: 1.5rem;
+  display: grid;
+  gap: 1rem;
+}
+
+.desc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  text-align: center;
+  padding: 0 0.9rem;
+  line-height: 1.2rem;
+}
+.desc p {
+  color: var(--clr-neu-des-blu);
+}
+.desc .title {
+  font-weight: var(--fw-bolder);
+  color: var(--clr-neu-dark-blu);
+}
+.flex__group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--clr-neu-vpale-blu);
+  padding: 1rem;
+  border-radius: 1rem;
+  font-size: 0.625rem;
+  color: var(--clr-neu-dark-blu);
+}
+.flex__group .sub {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: center;
+}
+.flex__group .sub p {
+  font-size: 1rem;
+  color: var(--clr-neu-des-blu);
+}
+.flex__group a {
+  color: var(--clr-primary-bright-blu);
+  font-weight: var(--fw-bold);
+  font-size: 0.825rem;
+}
+.flex__group a:hover {
+  text-decoration: none;
+}
+
+.cta {
+  padding: 1rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+button {
+  padding: 0.724rem;
+  border: none;
+  cursor: pointer;
+}
+.proceed {
+  background: var(--clr-primary-bright-blu);
+  color: white;
+  font-weight: var(--fw-bolder);
+  border-radius: 0.725rem;
+}
+.proceed:hover {
+  background: var(--clr-neu-des-blu);
+}
+.cancel {
+  background: none;
+  font-weight: var(--fw-bolder);
+  opacity: 0.7;
+}
