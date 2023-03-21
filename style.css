@@ -67,6 +67,13 @@ body {
   margin: 1rem;
   gap: 1rem;
 }
+@media (min-width: 600px) {
+  body {
+    background: url("./images/pattern-background-desktop.svg");
+    background-repeat: no-repeat;
+    background-color: var(--clr-primary-pale-blu);
+  }
+}
 article {
   background-color: white;
   border-radius: 1.5rem;
@@ -74,6 +81,7 @@ article {
   display: grid;
   max-width: 375px;
   min-width: 375px;
+  box-shadow: 0px 10px 3px 0px rgba(189, 188, 188, 0.178);
 }
 .description {
   padding: 1.5rem;
